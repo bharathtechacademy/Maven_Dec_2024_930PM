@@ -49,19 +49,15 @@ public class ExcelUtil {
 			int totalRows = sheet.getPhysicalNumberOfRows(); //total number of rows having data
 			int totalColumns = sheet.getRow(0).getPhysicalNumberOfCells();//total number of columns having data in specific row
 			
-			for(int r=1;r<totalRows ; r++) {
-				
-				HashMap<String,String> rowData = new HashMap<String,String>(); 
-				
-				
+			for(int r=1;r<totalRows ; r++) {				
+				HashMap<String,String> rowData = new HashMap<String,String>(); 				
 				for(int c=0; c<totalColumns;c++) {
 					String columnName = sheet.getRow(0).getCell(c).getStringCellValue();
 					String columnValue = sheet.getRow(r).getCell(c).getStringCellValue();
 					rowData.put(columnName, columnValue);
 				}
 				data.add(rowData);
-			}
-			
+			}			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

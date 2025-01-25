@@ -17,10 +17,9 @@ public class ReadExcelData {
 //		}
 		
 		//Read Excel into List
-		List<Map<String,String>> excelData = ExcelUtil.readExcelData("TestData.xlsx", "Sheet3");
-		excelData.get(2).put("Username", "Sumit");
+		List<Map<String,String>> excelData = ExcelUtil.readExcelData("CollectionsAssignment.xlsx", "ProductDetails");
 		
-		System.out.println(excelData.get(2).get("Username"));
+		System.out.println(excelData.get(2));
 		
 
 	}
