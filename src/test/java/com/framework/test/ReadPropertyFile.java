@@ -1,6 +1,8 @@
-package com.framework.utilities;
+package com.framework.test;
 
 import java.util.Properties;
+
+import com.framework.utilities.PropUtil;
 
 public class ReadPropertyFile {
 

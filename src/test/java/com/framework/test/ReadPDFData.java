@@ -1,4 +1,6 @@
-package com.framework.utilities;
+package com.framework.test;
+
+import com.framework.utilities.PdfUtil;
 
 public class ReadPDFData {
 
