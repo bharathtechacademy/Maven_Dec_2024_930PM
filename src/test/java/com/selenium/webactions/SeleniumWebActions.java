@@ -6,8 +6,10 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -80,6 +82,7 @@ public class SeleniumWebActions {
 		
 		//Using actions class
 		actions.sendKeys(element, "Text").perform();
+		actions.sendKeys(element, "Text"+Keys.ENTER+Keys.F12).perform();
 		
 		//Type of hidden / disabled textboxes
 		js.executeScript("arguments[0].value='Text'", element);
@@ -161,6 +164,31 @@ public class SeleniumWebActions {
 		 // click on the link and verify the url
 		element.click();
 		String URL = driver.getCurrentUrl();
+		
+		/********** Alerts **********/
+		Alert alert = driver.switchTo().alert();
+		
+		//click on ok
+		alert.accept();
+		
+		//click on cancel
+		alert.dismiss();
+		
+		//get Text
+		alert.getText();
+		
+		//enter text
+		alert.sendKeys("Text");
+		
+		/********** Frames **********/
+		
+		//Switch to frame from main window
+		driver.switchTo().frame(0); //using index
+		
+		driver.switchTo().frame("frame1"); //using id or name
+		
+		driver.switchTo().frame(element);//using web element
+
 	}
 
 }
