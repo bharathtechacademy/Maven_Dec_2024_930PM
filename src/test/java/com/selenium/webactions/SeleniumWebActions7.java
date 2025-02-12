@@ -1,10 +1,15 @@
 package com.selenium.webactions;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,7 +41,7 @@ public class SeleniumWebActions7 {
 	public static ExtentTest logger= null; //ink
 	
 
-	public static void main(String[] args) { 
+	public static void main(String[] args) throws IOException { 
 		
 		html = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\Reports\\AutomationTestResults.html");
 		extent = new ExtentReports();
@@ -66,6 +71,7 @@ public class SeleniumWebActions7 {
 		WebElement logo = driver.findElement(By.xpath("//img[@class='logo']"));
 		Assert.assertTrue(logo.isDisplayed());
 		logger.pass("Application Logo Displayed Successfully");
+		logger.addScreenCaptureFromPath(takeElementScreenshot(logo, "logo.png"));
 		
 //		7. Verify application caption (Experience the difference)
 		WebElement caption = driver.findElement(By.xpath("//p[@class='caption']"));
@@ -105,7 +111,7 @@ public class SeleniumWebActions7 {
 		
 		WebElement errorMessage = driver.findElement(By.xpath("//p[@class='error']"));
 		logger.error("Error message is displayed as "+errorMessage.getText());
-		
+		logger.addScreenCaptureFromPath(takeWindowScreenshot(driver, "ErrorMessage.png"));
 		extent.flush();
 		
 //		11. Click on Admin page link
@@ -183,6 +189,28 @@ public class SeleniumWebActions7 {
 	public static void cell(int row, int col) {
 		WebElement cellElement = driver.findElement(By.xpath("//span[text()='Bookstore services:']/following-sibling::table[1]//tbody//tr["+row+"]//td["+col+"]"));
 		System.out.println("Value of Row "+row+" Column "+col+" is : "+cellElement.getText());
+	}
+	
+	public static String takeWindowScreenshot(WebDriver driver, String screenshotNameAlongWithFormat) {
+		String filePath = System.getProperty("user.dir")+"\\Screenshots\\"+screenshotNameAlongWithFormat;
+		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(screenshotFile, new File(filePath));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return filePath;
+	}
+	
+	public static String takeElementScreenshot(WebElement element, String screenshotNameAlongWithFormat) {
+		String filePath = System.getProperty("user.dir")+"\\Screenshots\\"+screenshotNameAlongWithFormat;
+		File screenshotFile = element.getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(screenshotFile, new File(filePath));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return filePath;
 	}
 
 }

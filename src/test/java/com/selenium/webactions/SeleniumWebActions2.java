@@ -65,7 +65,7 @@ public class SeleniumWebActions2 {
 		
 //		10. Verify error message is coming
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.xpath("//p[@class='error']"), 0));		
+		wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.xpath("//p[@class='error1']"), 0));		
 		
 //		11. Click on Admin page link
 		WebElement adminLink = driver.findElement(By.xpath("//a[text()='Admin Page']"));
