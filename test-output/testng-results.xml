@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-14T22:28:44 IST" name="Suite" finished-at="2025-02-14T22:28:45 IST" duration-ms="65">
+    <groups>
+      <group name="Sanity">
+        <method signature="AppCommons.TestCase3(java.lang.String,java.lang.String)[pri:3, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" name="TestCase3" class="com.framework.testng.concepts.AppCommons"/>
+        <method signature="AppCommons.TestCase2()[pri:1, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" name="TestCase2" class="com.framework.testng.concepts.AppCommons"/>
+        <method signature="AppCommons.TestCase3(java.lang.String,java.lang.String)[pri:3, instance:com.framework.testng.concepts.AppCommons@692f203f]" name="TestCase3" class="com.framework.testng.concepts.AppCommons"/>
+        <method signature="AppCommons.TestCase2()[pri:1, instance:com.framework.testng.concepts.AppCommons@692f203f]" name="TestCase2" class="com.framework.testng.concepts.AppCommons"/>
+        <method signature="AppCommons.TestCase3(java.lang.String,java.lang.String)[pri:3, instance:com.framework.testng.concepts.AppCommons@55141def]" name="TestCase3" class="com.framework.testng.concepts.AppCommons"/>
+        <method signature="AppCommons.TestCase2()[pri:1, instance:com.framework.testng.concepts.AppCommons@55141def]" name="TestCase2" class="com.framework.testng.concepts.AppCommons"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="AppCommons.TestCase1()[pri:2, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" name="TestCase1" class="com.framework.testng.concepts.AppCommons"/>
+        <method signature="AppCommons.TestCase3(java.lang.String,java.lang.String)[pri:3, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" name="TestCase3" class="com.framework.testng.concepts.AppCommons"/>
+        <method signature="AppCommons.TestCase1()[pri:2, instance:com.framework.testng.concepts.AppCommons@692f203f]" name="TestCase1" class="com.framework.testng.concepts.AppCommons"/>
+        <method signature="AppCommons.TestCase3(java.lang.String,java.lang.String)[pri:3, instance:com.framework.testng.concepts.AppCommons@692f203f]" name="TestCase3" class="com.framework.testng.concepts.AppCommons"/>
+        <method signature="AppCommons.TestCase1()[pri:2, instance:com.framework.testng.concepts.AppCommons@55141def]" name="TestCase1" class="com.framework.testng.concepts.AppCommons"/>
+        <method signature="AppCommons.TestCase3(java.lang.String,java.lang.String)[pri:3, instance:com.framework.testng.concepts.AppCommons@55141def]" name="TestCase3" class="com.framework.testng.concepts.AppCommons"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2025-02-14T22:28:44 IST" name="FirefoxTest" finished-at="2025-02-14T22:28:45 IST" duration-ms="64">
+      <class name="com.framework.testng.concepts.AppCommons">
+        <test-method is-config="true" signature="startReporting()[pri:0, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:44 IST" name="startReporting" finished-at="2025-02-14T22:28:44 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReporting -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:45 IST" name="launchBrowserAndApplication" finished-at="2025-02-14T22:28:45 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.creatio.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method signature="TestCase1()[pri:2, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:45 IST" name="TestCase1" finished-at="2025-02-14T22:28:45 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase1 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:45 IST" name="closeBrowser" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:45 IST" name="launchBrowserAndApplication" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.creatio.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method signature="TestCase3(java.lang.String,java.lang.String)[pri:3, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:45 IST" name="TestCase3" data-provider="data" finished-at="2025-02-14T22:28:45 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bharath]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bharath123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase3 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:45 IST" name="closeBrowser" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="TestCase3(java.lang.String,java.lang.String)[pri:3, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:45 IST" name="TestCase3" data-provider="data" finished-at="2025-02-14T22:28:45 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Invalid123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase3 -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:45 IST" name="launchBrowserAndApplication" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.creatio.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:45 IST" name="closeBrowser" finished-at="2025-02-14T22:28:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="TestCase2()[pri:1, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:45 IST" name="TestCase2" finished-at="2025-02-14T22:28:45 IST" depends-on-methods="com.framework.testng.concepts.AppCommons.TestCase3, com.framework.testng.concepts.AppCommons.TestCase1" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase2 -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:45 IST" name="launchBrowserAndApplication" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.creatio.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:45 IST" name="closeBrowser" finished-at="2025-02-14T22:28:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="stopReporting()[pri:0, instance:com.framework.testng.concepts.AppCommons@55141def]" started-at="2025-02-14T22:28:45 IST" name="stopReporting" finished-at="2025-02-14T22:28:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReporting -->
+      </class> <!-- com.framework.testng.concepts.AppCommons -->
+    </test> <!-- FirefoxTest -->
+    <test started-at="2025-02-14T22:28:44 IST" name="EdgeTest" finished-at="2025-02-14T22:28:45 IST" duration-ms="65">
+      <class name="com.framework.testng.concepts.AppCommons">
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:com.framework.testng.concepts.AppCommons@692f203f]" started-at="2025-02-14T22:28:45 IST" name="launchBrowserAndApplication" finished-at="2025-02-14T22:28:45 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.creatio.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method signature="TestCase1()[pri:2, instance:com.framework.testng.concepts.AppCommons@692f203f]" started-at="2025-02-14T22:28:45 IST" name="TestCase1" finished-at="2025-02-14T22:28:45 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase1 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.framework.testng.concepts.AppCommons@692f203f]" started-at="2025-02-14T22:28:45 IST" name="closeBrowser" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="TestCase3(java.lang.String,java.lang.String)[pri:3, instance:com.framework.testng.concepts.AppCommons@692f203f]" started-at="2025-02-14T22:28:45 IST" name="TestCase3" data-provider="data" finished-at="2025-02-14T22:28:45 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bharath]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bharath123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase3 -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:com.framework.testng.concepts.AppCommons@692f203f]" started-at="2025-02-14T22:28:45 IST" name="launchBrowserAndApplication" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.creatio.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:com.framework.testng.concepts.AppCommons@692f203f]" started-at="2025-02-14T22:28:45 IST" name="launchBrowserAndApplication" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.creatio.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method signature="TestCase3(java.lang.String,java.lang.String)[pri:3, instance:com.framework.testng.concepts.AppCommons@692f203f]" started-at="2025-02-14T22:28:45 IST" name="TestCase3" data-provider="data" finished-at="2025-02-14T22:28:45 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Invalid123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase3 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.framework.testng.concepts.AppCommons@692f203f]" started-at="2025-02-14T22:28:45 IST" name="closeBrowser" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.framework.testng.concepts.AppCommons@692f203f]" started-at="2025-02-14T22:28:45 IST" name="closeBrowser" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:com.framework.testng.concepts.AppCommons@692f203f]" started-at="2025-02-14T22:28:45 IST" name="launchBrowserAndApplication" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.creatio.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method signature="TestCase2()[pri:1, instance:com.framework.testng.concepts.AppCommons@692f203f]" started-at="2025-02-14T22:28:45 IST" name="TestCase2" finished-at="2025-02-14T22:28:45 IST" depends-on-methods="com.framework.testng.concepts.AppCommons.TestCase3, com.framework.testng.concepts.AppCommons.TestCase1" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase2 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.framework.testng.concepts.AppCommons@692f203f]" started-at="2025-02-14T22:28:45 IST" name="closeBrowser" finished-at="2025-02-14T22:28:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.framework.testng.concepts.AppCommons -->
+    </test> <!-- EdgeTest -->
+    <test started-at="2025-02-14T22:28:44 IST" name="ChromeTest" finished-at="2025-02-14T22:28:45 IST" duration-ms="64">
+      <class name="com.framework.testng.concepts.AppCommons">
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" started-at="2025-02-14T22:28:45 IST" name="launchBrowserAndApplication" finished-at="2025-02-14T22:28:45 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.creatio.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method signature="TestCase1()[pri:2, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" started-at="2025-02-14T22:28:45 IST" name="TestCase1" finished-at="2025-02-14T22:28:45 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase1 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" started-at="2025-02-14T22:28:45 IST" name="closeBrowser" finished-at="2025-02-14T22:28:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" started-at="2025-02-14T22:28:45 IST" name="launchBrowserAndApplication" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.creatio.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method signature="TestCase3(java.lang.String,java.lang.String)[pri:3, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" started-at="2025-02-14T22:28:45 IST" name="TestCase3" data-provider="data" finished-at="2025-02-14T22:28:45 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bharath]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bharath123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase3 -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" started-at="2025-02-14T22:28:45 IST" name="launchBrowserAndApplication" finished-at="2025-02-14T22:28:45 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.creatio.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" started-at="2025-02-14T22:28:45 IST" name="closeBrowser" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="TestCase3(java.lang.String,java.lang.String)[pri:3, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" started-at="2025-02-14T22:28:45 IST" name="TestCase3" data-provider="data" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Invalid123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase3 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" started-at="2025-02-14T22:28:45 IST" name="closeBrowser" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="TestCase2()[pri:1, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" started-at="2025-02-14T22:28:45 IST" name="TestCase2" finished-at="2025-02-14T22:28:45 IST" depends-on-methods="com.framework.testng.concepts.AppCommons.TestCase3, com.framework.testng.concepts.AppCommons.TestCase1" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase2 -->
+        <test-method is-config="true" signature="launchBrowserAndApplication(java.lang.String,java.lang.String)[pri:0, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" started-at="2025-02-14T22:28:45 IST" name="launchBrowserAndApplication" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.creatio.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.framework.testng.concepts.AppCommons@7e07db1f]" started-at="2025-02-14T22:28:45 IST" name="closeBrowser" finished-at="2025-02-14T22:28:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.framework.testng.concepts.AppCommons -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

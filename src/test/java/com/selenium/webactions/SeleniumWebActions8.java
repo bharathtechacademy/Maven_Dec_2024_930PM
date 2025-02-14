@@ -28,7 +28,7 @@ public class SeleniumWebActions8 {
 	static WebDriver driver;
 
 
-	public static void main(String[] args) throws IOException { 
+	public static void test(String[] args) throws IOException { 
 		
 //		1. Launch browser window(Chrome)
 		driver = new ChromeDriver();
