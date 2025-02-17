@@ -17,13 +17,13 @@ import org.testng.annotations.Test;
 
 public class AppCommons extends WebCommons {
 
-	@Test(priority = 2, groups = { "Regression" })
+	@Test(priority = 2, groups = { "Regression" }, retryAnalyzer=RetryTest.class)
 	public void TestCase1() {
-//		Assert.fail("Test Case 1 Failed");
+		Assert.fail("Test Case 1 Failed");
 		System.out.println("Test Case 1 - Home Page Executed Successfully...");
 	}
 
-	@Test(priority = 1, groups = { "Sanity" }, dependsOnMethods= {"TestCase1","TestCase3"}, enabled =true) //test is disabled if enabled is false
+	@Test(priority = 1, groups = { "Sanity" }, dependsOnMethods= {"TestCase3"}, enabled =true) //test is disabled if enabled is false
 	public void TestCase2() {
 		System.out.println("Test Case 2 - Add Product to Cart Feature Executed Successfully...");
 	}

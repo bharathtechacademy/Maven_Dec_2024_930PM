@@ -3,6 +3,9 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="AppUrl" value="www.creatio.com"/>
   <parameter name="Browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="com.framework.testng.concepts.TestListener"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.framework.testng.concepts.AppCommons">
@@ -11,9 +14,7 @@
           <include name="TestCase1"/>
           <include name="launchBrowserAndApplication"/>
           <include name="closeBrowser"/>
-          <include name="TestCase3"/>
           <include name="startReporting"/>
-          <include name="TestCase2"/>
         </methods>
       </class> <!-- com.framework.testng.concepts.AppCommons -->
     </classes>
